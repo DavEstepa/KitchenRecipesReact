@@ -1,9 +1,20 @@
+import React, { useEffect } from 'react';
+import {
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+
+import ApplicationPage from './pages/ApplicationPage';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      Bienvenido
-    </div>
+      <Switch>
+        <Route path='/application' component={ApplicationPage} />
+        <Route path='/' exact component={HomePage} />
+        <Redirect to='/' />
+      </Switch>
   );
 }
 
