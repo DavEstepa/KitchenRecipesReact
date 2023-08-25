@@ -10,7 +10,12 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     
-    <Router className="App"><App /></Router>
+    <Router
+      className="App"
+      style={{ height: '100vh' }}
+    >
+      <App />
+    </Router>
     
 );
 
