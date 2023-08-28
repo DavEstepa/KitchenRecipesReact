@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-light" style={{backgroundColor: '#f9d6b1'}}>
             <div className="container-fluid">
-                <a className="navbar-brand">Navbar</a>
+                <a className="navbar-brand">Secrets Steps</a>
 
                 {(actualRoute.pathname === '/application/register' ||
                 <form className="d-flex">
